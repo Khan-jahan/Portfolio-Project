@@ -1,0 +1,73 @@
+:root{
+    ---Primary-Color:rgb(39, 154, 204);
+    --Secondary-color:rgb(71, 18, 156);
+    ---padding:10px;
+    ---margin:5px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", serif;
+}
+
+
+img{
+    
+    border-radius:40%;
+}
+
+.navbar h1 {
+    margin: 0;
+    padding-top: 10px;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+.nav-link{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.navbar a{
+    background-color:rgb(43, 43, 219);
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.navbar a:hover{
+    background-color:gray
+}
+
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+/* For Mobile */
+[class*="col-"]{
+    width: 100%;
+}
+
+.navbar{
+    background-color:var(---Primary-Color) ;
+    padding: var(---padding);
+    margin: var(---margin);
+   
+}
+
+.navbar::after{
+    content:'';
+    display: table;
+    clear: both;
+}
